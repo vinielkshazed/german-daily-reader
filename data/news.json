@@ -1,85 +1,50 @@
 {
   "version": 1,
-  "updated_at": "2026-11-25T00:41:03+08:00",
+  "updated_at": "2026-11-25T00:43:42+08:00",
   "items": [
     {
       "id": "2026-11-25",
       "date": "2026-11-25",
-      "fetched_at": "2026-11-25T00:41:03+08:00",
+      "fetched_at": "2026-11-25T00:43:42+08:00",
       "source": {
-        "id": "mdr_leicht",
-        "name": "MDR · Nachrichten in Leichter Sprache",
-        "level": "Leichte Sprache",
-        "homepage": "https://www.mdr.de/nachrichten-leicht/"
+        "id": "dw_langsam",
+        "name": "DW · Langsam gesprochene Nachrichten",
+        "level": "Langsam gesprochen (B2)",
+        "homepage": "https://learngerman.dw.com/de/langsam-gesprochene-nachrichten/s-60040332"
       },
-      "title": "Nachrichten in Leichter Sprache - aus Mitteldeutschland",
-      "url": "https://www.mdr.de/nachrichten/podcast/leichte-sprache",
-      "published": "2026-05-28T07:50:42Z",
+      "title": "24.11.2026 – Langsam Gesprochene Nachrichten",
+      "url": "https://learngerman.dw.com/de/24-11-2026-langsam-gesprochene-nachrichten/a-80029385?maca=de-DKpodcast_lgn_de-2288-xml-mrss",
+      "published": "Tue, 24 Nov 2026 11:04:00 GMT",
       "audio": {
-        "url": "https://ondemand.unified.mdr.de/mdr/audio/weltweit/2026/11/24/mdrde-12133b05-3474-4b76-9378-a8bdab5bd7bb.mp3128.mp3",
+        "url": "https://radiodownloaddw-a.akamaihd.net/Events/podcasts/de/2288_DKpodcast_lgn_de/F3119FB6_2-podcast-2288-80029385.mp3",
         "mime": "audio/mpeg",
-        "duration": ""
+        "duration": "08:00"
       },
       "paragraphs": [
-        "+ Angriffe auf Polizisten nach Gen Z Demo in Leipzig + Unter der Erde brennt es bei Meuselwitz + Viele Weihnachts-Märkte öffnen heute + 3 Eishockey-Mannschaften aus Sachsen gewinnen +",
-        "+ Neue Regeln fürs Bezahlen beim Internet-Einkauf + Höchstes Windrad der Welt in der Lausitz + Löwen im Erfurter Zoo bekommen öfter ganze Tiere als Futter + Große Reise-Messe in Leipzig + Kultur-Tipps fürs Wochen-Ende +",
-        "+ Strom soll bald weniger kosten + Züge zwischen Halle und Magdeburg haben Verspätungen + Schnell-Läuferin Rebekka Haase kommt zurück nach Sachsen + Viele Kinder machen bei einem großen Sportfest in Bad Blankenburg mit +",
-        "+ Die Menschen in Sachsen-Anhalt sind besonders zufrieden + Thüringen: Helfer für Menschen mit Demenz + Thüringen will die Menschen besser vor Hochwasser schützen + Mehr Polizei auf den Weihnachts-Märkten in Sachsen +",
-        "+ Sperren am Magdeburger Weihnachtsmarkt + Thüringen: Gebärdensprache vielleicht als Fremd-Sprache + Leipzig repariert Straßenbahn-Gleise + Mehr politische Extreme in Thüringen + Morgen ist Buß- und Bettag in Sachsen +"
+        "Südkorea hat nach der Annäherung russischer Militärflugzeuge vorübergehend eine Evakuierungswarnung für die Insel Ulleung vor der Ostküste des Landes ausgegeben. Nach Angaben des südkoreanischen Generalstabs waren mehrere russische Maschinen in die Luftverteidigungszone des Landes eingedrungen. Daraufhin seien südkoreanische Kampfjets aufgestiegen und die russischen Flugzeuge hätten sich zurückgezogen. Die Zone dient der frühzeitigen Identifizierung ausländischer Flugzeuge und reicht über den nationalen Luftraum hinaus. Bereits vergangene Woche hatte Südkorea einen ähnlichen Vorfall gemeldet. Auch Japan und Taiwan registrierten zuletzt entsprechende Aktivitäten russischer Flugzeuge.",
+        "US-Präsident Donald Trump hat nach eigener Darstellung eine zentrale Rolle bei der Rückkehr von Jensen Huang an die Spitze des Chipkonzerns Nvidia gespielt. Er habe „direkt und indirekt“ mit dem Verwaltungsrat von Nvidia gesprochen, sagte Trump dem US-Sender CNBC. Er zeigte sich überzeugt, dass Huang ohne seinen Druck nicht zurückgekommen wäre. Huang, der nach dem Bekanntwerden von zwei außerehelichen Affären zurückgetreten war, wurde in einer überraschenden Kehrtwende am Montag wieder zum Nvidia-Chef ernannt. Bei einer der Frauen, mit denen er eine Affäre gehabt haben soll, haben US-Sicherheitsbehörden laut Medienberichten den Verdacht, dass sie vom chinesischen Geheimdienst angeworben worden war.",
+        "US-Präsident Donald Trump will die Vollstreckung der Todesstrafe auf Bundesebene beschleunigen. Er habe seinem Justizminister eine entsprechende Anweisung erteilt, sagte Trump in Washington. Sobald die Geschworenen ihr Urteil gefällt hätten, müsse die Todesstrafe zügig vollstreckt werden. Zugleich kritisierte Trump die Entscheidung des scheidenden demokratischen Gouverneurs von Kalifornien, Gavin Newsom, sämtliche Todesurteile in lebenslange Haftstrafen umzuwandeln. Newsom hatte den Schritt Anfang November angekündigt. Kalifornien vollstreckt bereits seit 20 Jahren keine Todesurteile mehr. Newsom gilt als möglicher Präsidentschaftskandidat der Demokraten für die Wahl im Jahr 2028.",
+        "Brüssel will russischen Athleten und Mannschaften die Teilnahme unter russischer Flagge an sämtlichen Sportveranstaltungen in der EU verbieten. „Wir schlagen vor, die Darstellung offizieller russischer Symbole zu untersagen“, sagte EU-Kommissionspräsidentin Ursula von der Leyen. Zudem sollen die Finanzströme russischer Sponsoren begrenzt und die Möglichkeit für Russinnen und Russen, Leitungsposten in europäischen Sportverbänden zu übernehmen, beschränkt werden. Die Maßnahmen sind Teil des 22. Sanktionspakets gegen Russland, das die Kommission am Montag vorstellte. Die Strafmaßnahmen müssen noch von den Mitgliedstaaten gebilligt werden.",
+        "Der frühere brasilianische Präsident Jair Bolsonaro ist nach einem akuten Darmverschluss auf dem Weg der Besserung. Seine Beschwerden hätten sich innerhalb von 24 Stunden deutlich gebessert, teilte sein behandelnder Arzt in der Hauptstadt Brasília mit. Eine Operation stehe derzeit nicht im Vordergrund. Bolsonaro war am Samstag auf die Intensivstation verlegt worden. Seit einem Messerangriff während des Präsidentschaftswahlkampfs 2018 leidet er immer wieder unter Darmproblemen. Der 71-Jährige wurde im vergangenen Jahr wegen eines versuchten Staatsstreichs zu einer langjährigen Haftstrafe verurteilt. Aufgrund seiner gesundheitlichen Probleme verbüßt er diese seit März im Hausarrest.",
+        "Bundesregierung und Bundeskriminalamt (BKA) veröffentlichen an diesem Dienstag Zahlen zu „häuslicher Gewalt“ und „geschlechtsspezifisch gegen Frauen gerichteten Straftaten“ im vergangenen Jahr. Bundesinnenminister Alexander Dobrindt, Frauen- und Familienministerin Karin Prien sowie die stellvertretende BKA-Chefin Martina Link stellen dazu in Berlin entsprechende „Bundeslagebilder“ vor. Im vergangenen Jahr hatte das BKA für 2024 einen Höchststand von fast 266.000 Opfern häuslicher Gewalt vermeldet. Über 70 Prozent der Opfer waren weiblich. Seit 2024 erstellt das BKA auch ein bundesweites Lagebild zu „geschlechtsspezifisch gegen Frauen gerichteten Straftaten“."
       ],
-      "sentence": "+ Neue Regeln fürs Bezahlen beim Internet-Einkauf + Höchstes Windrad der Welt in der Lausitz + Löwen im Erfurter Zoo bekommen öfter ganze Tiere als Futter + Große Reise-Messe in Leipzig + Kultur-Tipps fürs Wochen-Ende +",
+      "sentence": "Bei einer der Frauen, mit denen er eine Affäre gehabt haben soll, haben US-Sicherheitsbehörden laut Medienberichten den Verdacht, dass sie vom chinesischen Geheimdienst angeworben worden war.",
       "sentence_meta": {
         "paragraph_index": 1,
-        "word_count": 30,
+        "word_count": 26,
         "meets_min_words": true
       },
       "vocab_list": [
         {
-          "word": "Neue",
-          "lemma": "neu",
-          "pos": "实词（详见词典）",
+          "word": "Bei",
+          "lemma": "bei",
+          "pos": "介词（+三格）",
           "meaning": ""
         },
         {
-          "word": "Regeln",
-          "lemma": "Regel",
-          "pos": "名词（词性请查词典）",
-          "meaning": ""
-        },
-        {
-          "word": "fürs",
-          "lemma": "fürs",
-          "pos": "实词（详见词典）",
-          "meaning": ""
-        },
-        {
-          "word": "Bezahlen",
-          "lemma": "Bezahlen",
-          "pos": "名词（词性请查词典）",
-          "meaning": ""
-        },
-        {
-          "word": "beim",
-          "lemma": "bei + dem",
-          "pos": "介词+冠词缩合（bei+dem）",
-          "meaning": ""
-        },
-        {
-          "word": "Internet-Einkauf",
-          "lemma": "Interneteinkauf",
-          "pos": "名词（词性请查词典）",
-          "meaning": ""
-        },
-        {
-          "word": "Höchstes",
-          "lemma": "hoch",
-          "pos": "名词（词性请查词典）",
-          "meaning": ""
-        },
-        {
-          "word": "Windrad",
-          "lemma": "Windrad",
-          "pos": "名词（词性请查词典）",
+          "word": "einer",
+          "lemma": "einer",
+          "pos": "冠词",
           "meaning": ""
         },
         {
@@ -89,111 +54,135 @@
           "meaning": ""
         },
         {
-          "word": "Welt",
-          "lemma": "Welt",
+          "word": "Frauen",
+          "lemma": "Frau",
           "pos": "名词（词性请查词典）",
           "meaning": ""
         },
         {
-          "word": "in",
-          "lemma": "in",
-          "pos": "介词（+三/四格）",
+          "word": "mit",
+          "lemma": "mit",
+          "pos": "介词（+三格）",
           "meaning": ""
         },
         {
-          "word": "Lausitz",
-          "lemma": "Lausitz",
-          "pos": "名词（词性请查词典）",
-          "meaning": ""
-        },
-        {
-          "word": "Löwen",
-          "lemma": "Löwe",
-          "pos": "名词（词性请查词典）",
-          "meaning": ""
-        },
-        {
-          "word": "im",
-          "lemma": "in + dem",
-          "pos": "介词+冠词缩合（in+dem）",
-          "meaning": ""
-        },
-        {
-          "word": "Erfurter",
-          "lemma": "Erfurter",
-          "pos": "名词（词性请查词典）",
-          "meaning": ""
-        },
-        {
-          "word": "Zoo",
-          "lemma": "Zoo",
-          "pos": "名词（词性请查词典）",
-          "meaning": ""
-        },
-        {
-          "word": "bekommen",
-          "lemma": "bekommen",
-          "pos": "动词（可能）",
-          "meaning": ""
-        },
-        {
-          "word": "öfter",
-          "lemma": "oft",
+          "word": "denen",
+          "lemma": "der",
           "pos": "实词（详见词典）",
           "meaning": ""
         },
         {
-          "word": "ganze",
-          "lemma": "ganz",
-          "pos": "实词（详见词典）",
+          "word": "er",
+          "lemma": "er",
+          "pos": "代词",
           "meaning": ""
         },
         {
-          "word": "Tiere",
-          "lemma": "Tier",
+          "word": "eine",
+          "lemma": "eine",
+          "pos": "冠词",
+          "meaning": ""
+        },
+        {
+          "word": "Affäre",
+          "lemma": "Affäre",
           "pos": "名词（词性请查词典）",
           "meaning": ""
         },
         {
-          "word": "als",
-          "lemma": "als",
+          "word": "gehabt",
+          "lemma": "haben",
+          "pos": "动词（过去分词，可能）",
+          "meaning": ""
+        },
+        {
+          "word": "haben",
+          "lemma": "haben",
+          "pos": "助动词/系动词",
+          "meaning": ""
+        },
+        {
+          "word": "soll",
+          "lemma": "sollen",
+          "pos": "情态动词",
+          "meaning": ""
+        },
+        {
+          "word": "US-Sicherheitsbehörden",
+          "lemma": "US-Sicherheitsbehörde",
+          "pos": "名词（词性请查词典）",
+          "meaning": ""
+        },
+        {
+          "word": "laut",
+          "lemma": "laut",
+          "pos": "介词（+二/三格）",
+          "meaning": ""
+        },
+        {
+          "word": "Medienberichten",
+          "lemma": "Medienbericht",
+          "pos": "名词（词性请查词典）",
+          "meaning": ""
+        },
+        {
+          "word": "den",
+          "lemma": "den",
+          "pos": "冠词",
+          "meaning": ""
+        },
+        {
+          "word": "Verdacht",
+          "lemma": "Verdacht",
+          "pos": "名词（词性请查词典）",
+          "meaning": ""
+        },
+        {
+          "word": "dass",
+          "lemma": "dass",
           "pos": "连词（从属，动词后置）",
           "meaning": ""
         },
         {
-          "word": "Futter",
-          "lemma": "futtern",
+          "word": "sie",
+          "lemma": "sie",
+          "pos": "代词",
+          "meaning": ""
+        },
+        {
+          "word": "vom",
+          "lemma": "von + dem",
+          "pos": "介词+冠词缩合（von+dem）",
+          "meaning": ""
+        },
+        {
+          "word": "chinesischen",
+          "lemma": "chinesisch",
+          "pos": "实词（详见词典）",
+          "meaning": ""
+        },
+        {
+          "word": "Geheimdienst",
+          "lemma": "Geheimdienst",
           "pos": "名词（词性请查词典）",
           "meaning": ""
         },
         {
-          "word": "Große",
-          "lemma": "Großer",
-          "pos": "名词（词性请查词典）",
+          "word": "angeworben",
+          "lemma": "anwerben",
+          "pos": "动词（可能）",
           "meaning": ""
         },
         {
-          "word": "Reise-Messe",
-          "lemma": "Reisemesse",
-          "pos": "名词（词性请查词典）",
+          "word": "worden",
+          "lemma": "werden",
+          "pos": "助动词 werden（将来时/被动/虚拟）",
           "meaning": ""
         },
         {
-          "word": "Leipzig",
-          "lemma": "Leipzig",
-          "pos": "名词（词性请查词典）",
-          "meaning": ""
-        },
-        {
-          "word": "Kultur-Tipps",
-          "lemma": "Kulturtipp",
-          "pos": "名词（词性请查词典）",
-          "meaning": ""
-        },
-        {
-          "word": "Wochen-Ende",
-          "lemma": "Wochenende",
-          "pos": "名词（词性请查词典）",
+          "word": "war",
+          "lemma": "sein",
+          "pos": "助动词/系动词",
           "meaning": ""
         }
       ],
@@ -202,12 +191,43 @@
         "skeleton": "（自动规则模式无法可靠识别主干，请参考下方结构拆分，或使用“第三步 AI 深度批改”。）",
         "structure": [
           {
-            "text": "+ Neue Regeln fürs Bezahlen beim Internet-Einkauf + Höchstes Windrad der Welt in der Lausitz + Löwen im Erfurter Zoo bekommen öfter ganze Tiere als Futter + Große Reise-Messe in Leipzig + Kultur-Tipps fürs Wochen-Ende +",
+            "text": "Bei einer der Frauen",
             "type": "主句（或主句开头）",
             "explanation": "陈述句中变位动词位于第二位。"
+          },
+          {
+            "text": "mit denen er eine Affäre gehabt haben soll",
+            "type": "补充/插入成分",
+            "explanation": "请结合上下文判断其修饰对象。"
+          },
+          {
+            "text": "haben US-Sicherheitsbehörden laut Medienberichten den Verdacht",
+            "type": "补充/插入成分",
+            "explanation": "请结合上下文判断其修饰对象。"
+          },
+          {
+            "text": "dass sie vom chinesischen Geheimdienst angeworben worden war",
+            "type": "dass 引导的从句",
+            "explanation": "从句中的变位动词通常位于从句末尾。"
           }
         ],
         "points": [
+          {
+            "title": "情态动词 + 不定式（框型结构）",
+            "explanation": "情态动词变位后放在第二位，实义动词不定式放在句末（从句中则一起放在末尾）。"
+          },
+          {
+            "title": "被动态 werden + 过去分词（可能）",
+            "explanation": "句中出现 werden 的变位形式和过去分词，可能构成“被……”的被动态。"
+          },
+          {
+            "title": "完成时 haben/sein + 过去分词（可能）",
+            "explanation": "助动词 haben/sein 变位放第二位，过去分词放句末。"
+          },
+          {
+            "title": "从句动词后置",
+            "explanation": "dass / weil / wenn 等从属连词及关系代词引导的从句，变位动词位于从句最后。"
+          },
           {
             "title": "易读德语（Leichte Sprache）的连字符",
             "explanation": "长复合词被连字符拆开以便阅读，标准拼写需去掉连字符并把后半部分小写。"
@@ -217,7 +237,7 @@
       },
       "analysis": {
         "engine": "fallback",
-        "generated_at": "2026-11-25T00:41:26+08:00"
+        "generated_at": "2026-11-25T00:43:46+08:00"
       }
     },
     {
