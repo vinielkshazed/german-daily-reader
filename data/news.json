@@ -1,7 +1,225 @@
 {
   "version": 1,
-  "updated_at": "2026-11-24T18:19:23+08:00",
+  "updated_at": "2026-11-25T00:41:03+08:00",
   "items": [
+    {
+      "id": "2026-11-25",
+      "date": "2026-11-25",
+      "fetched_at": "2026-11-25T00:41:03+08:00",
+      "source": {
+        "id": "mdr_leicht",
+        "name": "MDR · Nachrichten in Leichter Sprache",
+        "level": "Leichte Sprache",
+        "homepage": "https://www.mdr.de/nachrichten-leicht/"
+      },
+      "title": "Nachrichten in Leichter Sprache - aus Mitteldeutschland",
+      "url": "https://www.mdr.de/nachrichten/podcast/leichte-sprache",
+      "published": "2026-05-28T07:50:42Z",
+      "audio": {
+        "url": "https://ondemand.unified.mdr.de/mdr/audio/weltweit/2026/11/24/mdrde-12133b05-3474-4b76-9378-a8bdab5bd7bb.mp3128.mp3",
+        "mime": "audio/mpeg",
+        "duration": ""
+      },
+      "paragraphs": [
+        "+ Angriffe auf Polizisten nach Gen Z Demo in Leipzig + Unter der Erde brennt es bei Meuselwitz + Viele Weihnachts-Märkte öffnen heute + 3 Eishockey-Mannschaften aus Sachsen gewinnen +",
+        "+ Neue Regeln fürs Bezahlen beim Internet-Einkauf + Höchstes Windrad der Welt in der Lausitz + Löwen im Erfurter Zoo bekommen öfter ganze Tiere als Futter + Große Reise-Messe in Leipzig + Kultur-Tipps fürs Wochen-Ende +",
+        "+ Strom soll bald weniger kosten + Züge zwischen Halle und Magdeburg haben Verspätungen + Schnell-Läuferin Rebekka Haase kommt zurück nach Sachsen + Viele Kinder machen bei einem großen Sportfest in Bad Blankenburg mit +",
+        "+ Die Menschen in Sachsen-Anhalt sind besonders zufrieden + Thüringen: Helfer für Menschen mit Demenz + Thüringen will die Menschen besser vor Hochwasser schützen + Mehr Polizei auf den Weihnachts-Märkten in Sachsen +",
+        "+ Sperren am Magdeburger Weihnachtsmarkt + Thüringen: Gebärdensprache vielleicht als Fremd-Sprache + Leipzig repariert Straßenbahn-Gleise + Mehr politische Extreme in Thüringen + Morgen ist Buß- und Bettag in Sachsen +"
+      ],
+      "sentence": "+ Neue Regeln fürs Bezahlen beim Internet-Einkauf + Höchstes Windrad der Welt in der Lausitz + Löwen im Erfurter Zoo bekommen öfter ganze Tiere als Futter + Große Reise-Messe in Leipzig + Kultur-Tipps fürs Wochen-Ende +",
+      "sentence_meta": {
+        "paragraph_index": 1,
+        "word_count": 30,
+        "meets_min_words": true
+      },
+      "vocab_list": [
+        {
+          "word": "Neue",
+          "lemma": "neu",
+          "pos": "实词（详见词典）",
+          "meaning": ""
+        },
+        {
+          "word": "Regeln",
+          "lemma": "Regel",
+          "pos": "名词（词性请查词典）",
+          "meaning": ""
+        },
+        {
+          "word": "fürs",
+          "lemma": "fürs",
+          "pos": "实词（详见词典）",
+          "meaning": ""
+        },
+        {
+          "word": "Bezahlen",
+          "lemma": "Bezahlen",
+          "pos": "名词（词性请查词典）",
+          "meaning": ""
+        },
+        {
+          "word": "beim",
+          "lemma": "bei + dem",
+          "pos": "介词+冠词缩合（bei+dem）",
+          "meaning": ""
+        },
+        {
+          "word": "Internet-Einkauf",
+          "lemma": "Interneteinkauf",
+          "pos": "名词（词性请查词典）",
+          "meaning": ""
+        },
+        {
+          "word": "Höchstes",
+          "lemma": "hoch",
+          "pos": "名词（词性请查词典）",
+          "meaning": ""
+        },
+        {
+          "word": "Windrad",
+          "lemma": "Windrad",
+          "pos": "名词（词性请查词典）",
+          "meaning": ""
+        },
+        {
+          "word": "der",
+          "lemma": "der",
+          "pos": "冠词",
+          "meaning": ""
+        },
+        {
+          "word": "Welt",
+          "lemma": "Welt",
+          "pos": "名词（词性请查词典）",
+          "meaning": ""
+        },
+        {
+          "word": "in",
+          "lemma": "in",
+          "pos": "介词（+三/四格）",
+          "meaning": ""
+        },
+        {
+          "word": "Lausitz",
+          "lemma": "Lausitz",
+          "pos": "名词（词性请查词典）",
+          "meaning": ""
+        },
+        {
+          "word": "Löwen",
+          "lemma": "Löwe",
+          "pos": "名词（词性请查词典）",
+          "meaning": ""
+        },
+        {
+          "word": "im",
+          "lemma": "in + dem",
+          "pos": "介词+冠词缩合（in+dem）",
+          "meaning": ""
+        },
+        {
+          "word": "Erfurter",
+          "lemma": "Erfurter",
+          "pos": "名词（词性请查词典）",
+          "meaning": ""
+        },
+        {
+          "word": "Zoo",
+          "lemma": "Zoo",
+          "pos": "名词（词性请查词典）",
+          "meaning": ""
+        },
+        {
+          "word": "bekommen",
+          "lemma": "bekommen",
+          "pos": "动词（可能）",
+          "meaning": ""
+        },
+        {
+          "word": "öfter",
+          "lemma": "oft",
+          "pos": "实词（详见词典）",
+          "meaning": ""
+        },
+        {
+          "word": "ganze",
+          "lemma": "ganz",
+          "pos": "实词（详见词典）",
+          "meaning": ""
+        },
+        {
+          "word": "Tiere",
+          "lemma": "Tier",
+          "pos": "名词（词性请查词典）",
+          "meaning": ""
+        },
+        {
+          "word": "als",
+          "lemma": "als",
+          "pos": "连词（从属，动词后置）",
+          "meaning": ""
+        },
+        {
+          "word": "Futter",
+          "lemma": "futtern",
+          "pos": "名词（词性请查词典）",
+          "meaning": ""
+        },
+        {
+          "word": "Große",
+          "lemma": "Großer",
+          "pos": "名词（词性请查词典）",
+          "meaning": ""
+        },
+        {
+          "word": "Reise-Messe",
+          "lemma": "Reisemesse",
+          "pos": "名词（词性请查词典）",
+          "meaning": ""
+        },
+        {
+          "word": "Leipzig",
+          "lemma": "Leipzig",
+          "pos": "名词（词性请查词典）",
+          "meaning": ""
+        },
+        {
+          "word": "Kultur-Tipps",
+          "lemma": "Kulturtipp",
+          "pos": "名词（词性请查词典）",
+          "meaning": ""
+        },
+        {
+          "word": "Wochen-Ende",
+          "lemma": "Wochenende",
+          "pos": "名词（词性请查词典）",
+          "meaning": ""
+        }
+      ],
+      "reference_translation": "（暂无自动译文，请点击单词查词典，或使用第三步 AI 批改。）",
+      "grammar_notes": {
+        "skeleton": "（自动规则模式无法可靠识别主干，请参考下方结构拆分，或使用“第三步 AI 深度批改”。）",
+        "structure": [
+          {
+            "text": "+ Neue Regeln fürs Bezahlen beim Internet-Einkauf + Höchstes Windrad der Welt in der Lausitz + Löwen im Erfurter Zoo bekommen öfter ganze Tiere als Futter + Große Reise-Messe in Leipzig + Kultur-Tipps fürs Wochen-Ende +",
+            "type": "主句（或主句开头）",
+            "explanation": "陈述句中变位动词位于第二位。"
+          }
+        ],
+        "points": [
+          {
+            "title": "易读德语（Leichte Sprache）的连字符",
+            "explanation": "长复合词被连字符拆开以便阅读，标准拼写需去掉连字符并把后半部分小写。"
+          }
+        ],
+        "note": "⚠️ 本条解析由规则 + 免费机器翻译自动生成，仅供参考。"
+      },
+      "analysis": {
+        "engine": "fallback",
+        "generated_at": "2026-11-25T00:41:26+08:00"
+      }
+    },
     {
       "id": "2026-11-24",
       "date": "2026-11-24",
