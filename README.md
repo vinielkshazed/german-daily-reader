@@ -56,7 +56,7 @@ git push -u origin main
 
 1. 打开 **Google AI Studio**：<https://aistudio.google.com/apikey>，用 Google 账号登录。
 2. 点击 **Create API key**（如提示选择项目，选默认或新建一个即可），复制生成的一长串 Key（形如 `AIza...`）。
-3. 无需绑定信用卡，使用免费层级即可；本项目**每天只调用 1 次**，远低于免费额度。
+3. 无需绑定信用卡，使用免费层级即可；每次生成精读分析先调用主模型；只有调用或解析失败时，才再调用一次备用模型。
 
 > [!NOTE]
 > - Google AI Studio 在部分国家/地区（包括中国大陆）不提供服务，申请 Key 时需要所在网络环境受支持。**拿到 Key 之后**，实际调用是在 GitHub 的美国服务器上完成的，不受你本地网络影响。
@@ -100,7 +100,7 @@ git push -u origin main
 
 | 变量名 | 作用 | 示例 |
 |---|---|---|
-| `GEMINI_MODEL` | 更换 Gemini 模型（Google 推出新免费模型时修改） | `gemini-2.5-flash` |
+| `GEMINI_MODEL` | 设置主模型。失败后尝试 `gemini-3.1-flash-lite`，仍失败时使用免费翻译和规则解析 | `gemini-3.8-flash` |
 | `SOURCE_STRATEGY` | `priority` = 按优先级；`rotate` = 每天轮换首选来源，内容更多样 | `rotate` |
 
 修改抓取时间：编辑 `.github/workflows/daily-fetch.yml` 里的 `cron`（使用 **UTC 时间**，北京时间减 8 小时）。
@@ -135,7 +135,7 @@ GEMINI_API_KEY=你的key python scripts/fetch_news.py --force   # 真实写入
 | `deploy` 报错 `Pages not enabled` / `Branch not allowed` | 第 4 步 Source 没选 **GitHub Actions**；或默认分支不叫 `main`（把 workflow 里的 `main` 改成你的分支名） |
 | 网站显示 “数据加载失败” | 第一次运行还没完成，或 `data/news.json` 格式被手动改坏 |
 | 日志里出现 `Gemini 返回 HTTP 400/403` | Key 填错或模型名已下线：检查 Secret，或在 Variables 中设置新的 `GEMINI_MODEL` |
-| `Gemini 返回 HTTP 429` | 免费额度暂时用尽，当天自动降级，第二天恢复 |
+| `Gemini 返回 HTTP 429` | 主模型受限时尝试备用模型；两个模型均不可用时使用降级分析 |
 | 词表标着 “自动解析（降级）” | 当天没有使用 Gemini（未配置 Key 或调用失败） |
 | 音频播放失败 | 原媒体音频已下线或禁止外链，点击提示里的链接去原文收听 |
 | 换了浏览器/手机后笔记不见了 | 笔记保存在各自浏览器的 localStorage 里，不跨设备同步 |

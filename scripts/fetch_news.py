@@ -12,8 +12,8 @@
        - 找到且有音频：立刻选用
        - 否则记为“备胎”，继续换篇 / 换源；全部失败时取“有音频 + 最长句”的备胎
   4. 生成精读数据：
-       - 有 GEMINI_API_KEY：调用 1 次 Gemini（JSON Schema 结构化输出）
-       - 无 Key / 调用失败：simplemma 词形还原 + deep-translator 免费翻译 + 规则语法提示
+       - 有 GEMINI_API_KEY：先请求主模型，失败后尝试备用 Gemini 模型（JSON Schema 结构化输出）
+       - 无 Key / 两个模型均失败：simplemma 词形还原 + deep-translator 免费翻译 + 规则语法提示
   5. 写回 data/news.json（原子写入），由 GitHub Actions 负责 commit & push
 
 本地运行：
@@ -24,7 +24,7 @@
 
 环境变量（均可选）：
   GEMINI_API_KEY        Gemini API Key（GitHub Secrets 注入）
-  GEMINI_MODEL          默认 gemini-2.5-flash
+  GEMINI_MODEL          主模型，默认 gemini-3.8-flash；备用模型为 gemini-3.1-flash-lite
   SITE_TZ               “今天”按哪个时区计算，默认 Asia/Shanghai
   MIN_WORDS             长句阈值（严格大于），默认 20
   SOURCE_STRATEGY       priority（默认，按优先级）| rotate（按日期轮换起始来源）
@@ -86,7 +86,8 @@ SOURCE_STRATEGY = os.getenv("SOURCE_STRATEGY", "priority")
 NO_TRANSLATE = os.getenv("NO_TRANSLATE", "0") == "1"
 
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "").strip()
-GEMINI_MODEL = os.getenv("GEMINI_MODEL", "").strip() or "gemini-2.5-flash"
+GEMINI_MODEL = os.getenv("GEMINI_MODEL", "").strip() or "gemini-3.8-flash"
+GEMINI_FALLBACK_MODEL = "gemini-3.1-flash-lite"
 GEMINI_ENDPOINT = "https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
 
 HTTP_TIMEOUT = 25
@@ -623,7 +624,7 @@ def pick_article(sources: list[dict], seen: set[str]) -> tuple[Article, Selectio
 
 
 # --------------------------------------------------------------------------- #
-# 精读分析：Gemini（每天 1 次）
+# 精读分析：Gemini 主模型与备用模型
 # --------------------------------------------------------------------------- #
 GEMINI_SCHEMA = {
     "type": "OBJECT",
@@ -720,7 +721,7 @@ def normalize_analysis(obj: Any) -> dict | None:
         if isinstance(v, dict) and str(v.get("word", "")).strip():
             vocab.append({k: str(v.get(k, "") or "").strip() for k in ("word", "lemma", "pos", "meaning")})
     trans = str(obj.get("reference_translation", "") or "").strip()
-    gn = obj.get("grammar_notes") or {}
+    gn = obj.get("grammar_notes")
     if not vocab or not trans or not isinstance(gn, dict):
         return None
     grammar = {
@@ -737,8 +738,8 @@ def normalize_analysis(obj: Any) -> dict | None:
     return {"vocab_list": vocab, "reference_translation": trans, "grammar_notes": grammar}
 
 
-def analyze_with_gemini(sentence: str, title: str, paragraphs: list[str]) -> dict | None:
-    """每天只发起 1 次请求；失败直接返回 None，由降级方案接管。"""
+def analyze_with_gemini(sentence: str, title: str, paragraphs: list[str]) -> tuple[dict, str] | None:
+    """尝试主模型和备用模型，返回分析结果及实际使用的模型。"""
     if not GEMINI_API_KEY:
         log.info("未配置 GEMINI_API_KEY，使用降级方案。")
         return None
@@ -754,8 +755,18 @@ def analyze_with_gemini(sentence: str, title: str, paragraphs: list[str]) -> dic
             "responseSchema": GEMINI_SCHEMA,
         },
     }
-    url = GEMINI_ENDPOINT.format(model=GEMINI_MODEL)
-    log.info("调用 Gemini（%s）…", GEMINI_MODEL)
+    for model in dict.fromkeys((GEMINI_MODEL, GEMINI_FALLBACK_MODEL)):
+        if model != GEMINI_MODEL:
+            log.info("主模型未返回可用分析，切换到备用 Gemini（%s）。", model)
+        analysis = request_gemini_analysis(model, body)
+        if analysis is not None:
+            return analysis, model
+    return None
+
+
+def request_gemini_analysis(model: str, body: dict) -> dict | None:
+    url = GEMINI_ENDPOINT.format(model=model)
+    log.info("调用 Gemini（%s）…", model)
     try:
         r = requests.post(url, json=body, timeout=180,
                           headers={"x-goog-api-key": GEMINI_API_KEY,
@@ -764,18 +775,18 @@ def analyze_with_gemini(sentence: str, title: str, paragraphs: list[str]) -> dic
         log.warning("Gemini 请求失败：%s", e)
         return None
     if r.status_code != 200:
-        log.warning("Gemini 返回 HTTP %s：%s", r.status_code, r.text[:400])
+        log.warning("Gemini 返回 HTTP %s（%s）：%s", r.status_code, model, r.text[:400])
         return None
     try:
         data = r.json()
         parts = data["candidates"][0]["content"]["parts"]
         text = "".join(p.get("text", "") for p in parts if not p.get("thought"))
         result = normalize_analysis(json.loads(_strip_json_fence(text)))
-    except (KeyError, IndexError, ValueError, TypeError) as e:
+    except (AttributeError, KeyError, IndexError, ValueError, TypeError) as e:
         log.warning("Gemini 结果解析失败：%s", e)
         return None
     if result is None:
-        log.warning("Gemini 结果缺少必要字段，使用降级方案。")
+        log.warning("Gemini 结果缺少必要字段。")
     return result
 
 
@@ -1074,12 +1085,12 @@ def main() -> int:
     log.info("✅ 选中：[%s] %s\n   %s\n   精读句（%d 词）：%s",
              cand.source["id"], art.title, cand.url, sel.word_count, sel.sentence)
 
-    analysis = analyze_with_gemini(sel.sentence, art.title, art.paragraphs)
-    engine = GEMINI_MODEL
-    if analysis is None:
+    gemini_result = analyze_with_gemini(sel.sentence, art.title, art.paragraphs)
+    if gemini_result is None:
         analysis = analyze_fallback(sel.sentence)
         engine = "fallback"
     else:
+        analysis, engine = gemini_result
         analysis = complete_vocab(analysis, sel.sentence)
 
     src = cand.source
