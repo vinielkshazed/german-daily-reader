@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>每日德语精读 · Tägliche Nachrichten</title>
+  <meta name="description" content="每天一篇简易德语新闻 + 一句长难句精读：先自主翻译，再核对参考解析。" />
+  <meta name="theme-color" content="#f7f5f0" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#16181d" media="(prefers-color-scheme: dark)" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📰</text></svg>" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- ============ 吸顶区：导航 + 音频播放器 ============ -->
+  <div class="sticky-top" id="stickyTop">
+    <header class="topbar wrap">
+      <a class="brand" href="./" title="回到最新一期">
+        <span class="brand-mark">DE</span>
+        <span class="brand-text">每日德语精读</span>
+      </a>
+      <nav class="archive" aria-label="历史归档">
+        <button class="icon-btn" id="prevBtn" title="前一天（更早）" aria-label="前一天">‹</button>
+        <select id="dateSelect" aria-label="选择日期"></select>
+        <button class="icon-btn" id="nextBtn" title="后一天（更新）" aria-label="后一天">›</button>
+      </nav>
+    </header>
+
+    <div class="player wrap" id="player" aria-label="音频播放器">
+      <audio id="audio" preload="metadata"></audio>
+      <button class="play-btn" id="playBtn" aria-label="播放" title="播放 / 暂停（空格键）">
+        <svg class="i-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+        <svg class="i-pause" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+      </button>
+      <button class="ctrl-btn" id="backBtn" title="快退 5 秒（← 键）" aria-label="快退 5 秒">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5V2L7 6l5 4V7a6 6 0 1 1-6 6H4a8 8 0 1 0 8-8z"/></svg>
+        <span>5</span>
+      </button>
+      <div class="progress">
+        <input type="range" id="seek" min="0" max="0" step="0.1" value="0" aria-label="播放进度" />
+        <div class="time"><span id="curTime">0:00</span> / <span id="durTime">0:00</span></div>
+      </div>
+      <div class="speed" role="group" aria-label="播放速度">
+        <button data-rate="0.75">0.75x</button>
+        <button data-rate="1" class="active">1.0x</button>
+        <button data-rate="1.25">1.25x</button>
+      </div>
+      <div class="player-msg" id="playerMsg" hidden></div>
+    </div>
+  </div>
+
+  <main class="wrap" id="main">
+    <!-- 加载 / 错误状态 -->
+    <div class="state" id="state">
+      <div class="spinner" aria-hidden="true"></div>
+      <p>正在加载今日新闻…</p>
+    </div>
+
+    <div id="content" hidden>
+      <!-- ============ 新闻正文 ============ -->
+      <article class="card article" id="article">
+        <div class="meta" id="articleMeta"></div>
+        <h1 class="title" id="articleTitle"></h1>
+        <div class="body de" id="articleBody"></div>
+        <p class="source-link"><a id="articleLink" target="_blank" rel="noopener noreferrer">阅读原文 ↗</a></p>
+      </article>
+
+      <!-- ============ 第一步：自主精读 ============ -->
+      <section class="card step" id="step1">
+        <div class="step-head">
+          <span class="step-no">1</span>
+          <div>
+            <h2>自主精读</h2>
+            <p class="step-sub">借助词表扫清生词，先自己把这句话翻译出来</p>
+          </div>
+        </div>
+
+        <div class="notice" id="sentenceNotice" hidden></div>
+        <blockquote class="focus-sentence de" id="focusSentence" title="点击单词可定位到下方词卡"></blockquote>
+
+        <div class="vocab-toolbar">
+          <h3>逐词词表 <span class="count" id="vocabCount"></span></h3>
+          <div class="toolbar-actions">
+            <label class="switch" title="隐藏后点击单个词卡可查看释义，用来自测词汇量">
+              <input type="checkbox" id="hideMeaning" />
+              <span class="slider" aria-hidden="true"></span>
+              <span>隐藏中文释义</span>
+            </label>
+          </div>
+        </div>
+        <div class="vocab-grid" id="vocabGrid"></div>
+
+        <div class="notes">
+          <label for="myNote"><h3>我的翻译与笔记</h3></label>
+          <textarea id="myNote" rows="5" placeholder="先别看答案，试着把上面的句子翻译成中文……&#10;也可以记下不懂的语法点、生词联想等。"></textarea>
+          <div class="note-status"><span id="noteStatus">内容自动保存在本浏览器</span><span id="noteCount"></span></div>
+        </div>
+      </section>
+
+      <!-- ============ 第二步：核对答案 ============ -->
+      <section class="card step" id="step2">
+        <div class="step-head">
+          <span class="step-no">2</span>
+          <div>
+            <h2>核对答案</h2>
+            <p class="step-sub">翻译写完了？对照参考译文与语法拆解，找出自己的偏差</p>
+          </div>
+        </div>
+        <button class="primary-btn" id="revealBtn" aria-expanded="false" aria-controls="answerPanel">
+          ✅ 完成精读，核对参考解析
+        </button>
+
+        <div class="answer" id="answerPanel" hidden>
+          <div class="compare">
+            <div class="cmp-box mine">
+              <div class="cmp-label">我的翻译</div>
+              <div class="cmp-text" id="cmpMine"></div>
+            </div>
+            <div class="cmp-box ref">
+              <div class="cmp-label">参考译文</div>
+              <div class="cmp-text" id="cmpRef"></div>
+            </div>
+          </div>
+
+          <div class="grammar">
+            <h3>语法拆解</h3>
+            <div class="skeleton" id="gSkeleton"></div>
+            <ol class="structure" id="gStructure"></ol>
+            <h4>核心语法点</h4>
+            <ul class="points" id="gPoints"></ul>
+            <p class="engine-note" id="gNote"></p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ 第三步：AI 深度批改 ============ -->
+      <section class="card step" id="step3">
+        <div class="step-head">
+          <span class="step-no">3</span>
+          <div>
+            <h2>AI 深度批改</h2>
+            <p class="step-sub">还有疑问？一键复制提示词，粘贴到任意 AI 聊天框里追问</p>
+          </div>
+        </div>
+        <button class="secondary-btn" id="copyPromptBtn">📋 一键复制对比提示词</button>
+        <details class="prompt-preview">
+          <summary>预览提示词</summary>
+          <pre id="promptPreview"></pre>
+        </details>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer wrap">
+    <p>新闻版权归原媒体所有，本站仅作个人学习用途 · 数据每日由 GitHub Actions 自动更新</p>
+    <p class="shortcuts">快捷键：<kbd>空格</kbd> 播放/暂停 · <kbd>←</kbd>/<kbd>→</kbd> 快退/快进 5 秒</p>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="app.js" defer></script>
+</body>
+</html>

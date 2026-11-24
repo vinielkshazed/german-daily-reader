@@ -1,0 +1,79 @@
+{
+  "version": 1,
+  "updated_at": "2026-11-23T15:02:11+08:00",
+  "items": [
+    {
+      "id": "2026-11-23",
+      "date": "2026-11-23",
+      "demo": true,
+      "fetched_at": "2026-11-23T15:02:11+08:00",
+      "source": {
+        "id": "nachrichtenleicht",
+        "name": "nachrichtenleicht.de (Deutschlandfunk)",
+        "level": "Einfache Sprache",
+        "homepage": "https://www.nachrichtenleicht.de/"
+      },
+      "title": "Mehr Hilfe für Menschen mit Hör-Behinderung",
+      "url": "https://www.nachrichtenleicht.de/beispiel-artikel-100.html",
+      "published": "Sun, 23 Nov 2026 09:00:00 +0100",
+      "audio": {
+        "url": "https://download.deutschlandfunk.de/file/dradio/2026/11/23/beispiel.mp3",
+        "mime": "audio/mpeg",
+        "duration": "02:41"
+      },
+      "paragraphs": [
+        "In Deutschland leben viele Menschen mit einer Hör-Behinderung.",
+        "Die Bundes-Regierung will, dass Menschen mit einer Hör-Behinderung im Alltag besser unterstützt werden, zum Beispiel durch mehr Gebärden-Dolmetscher in Ämtern und Kranken-Häusern.",
+        "Verbände sagen: Das ist ein guter erster Schritt."
+      ],
+      "sentence": "Die Bundes-Regierung will, dass Menschen mit einer Hör-Behinderung im Alltag besser unterstützt werden, zum Beispiel durch mehr Gebärden-Dolmetscher in Ämtern und Kranken-Häusern.",
+      "sentence_meta": {
+        "paragraph_index": 1,
+        "word_count": 22,
+        "meets_min_words": true
+      },
+      "vocab_list": [
+        { "word": "Die", "lemma": "die", "pos": "冠词（阴性·主格）", "meaning": "（定冠词）" },
+        { "word": "Bundes-Regierung", "lemma": "die Bundesregierung", "pos": "名词（阴性）", "meaning": "联邦政府" },
+        { "word": "will", "lemma": "wollen", "pos": "情态动词", "meaning": "想要、打算" },
+        { "word": "dass", "lemma": "dass", "pos": "连词（从属）", "meaning": "（引导宾语从句）" },
+        { "word": "Menschen", "lemma": "der Mensch", "pos": "名词（阳性·弱变化）", "meaning": "人（复数）" },
+        { "word": "mit", "lemma": "mit", "pos": "介词（+三格）", "meaning": "有……的；带着" },
+        { "word": "einer", "lemma": "ein", "pos": "冠词（不定·阴性三格）", "meaning": "一个" },
+        { "word": "Hör-Behinderung", "lemma": "die Hörbehinderung", "pos": "名词（阴性）", "meaning": "听力障碍" },
+        { "word": "im", "lemma": "in + dem", "pos": "介词+冠词缩合（+三格）", "meaning": "在……中" },
+        { "word": "Alltag", "lemma": "der Alltag", "pos": "名词（阳性）", "meaning": "日常生活" },
+        { "word": "besser", "lemma": "gut", "pos": "形容词/副词（比较级）", "meaning": "更好地" },
+        { "word": "unterstützt", "lemma": "unterstützen", "pos": "动词（过去分词）", "meaning": "支持、帮助" },
+        { "word": "werden", "lemma": "werden", "pos": "助动词（被动）", "meaning": "被（构成被动态）" },
+        { "word": "zum", "lemma": "zu + dem", "pos": "介词+冠词缩合", "meaning": "（zum Beispiel：例如）" },
+        { "word": "Beispiel", "lemma": "das Beispiel", "pos": "名词（中性）", "meaning": "例子" },
+        { "word": "durch", "lemma": "durch", "pos": "介词（+四格）", "meaning": "通过" },
+        { "word": "mehr", "lemma": "viel", "pos": "不定数词（比较级）", "meaning": "更多的" },
+        { "word": "Gebärden-Dolmetscher", "lemma": "der Gebärdendolmetscher", "pos": "名词（阳性）", "meaning": "手语翻译员" },
+        { "word": "in", "lemma": "in", "pos": "介词（+三格/四格）", "meaning": "在……里" },
+        { "word": "Ämtern", "lemma": "das Amt", "pos": "名词（中性）", "meaning": "政府部门、机关（复数三格）" },
+        { "word": "und", "lemma": "und", "pos": "连词（并列）", "meaning": "和" },
+        { "word": "Kranken-Häusern", "lemma": "das Krankenhaus", "pos": "名词（中性）", "meaning": "医院（复数三格）" }
+      ],
+      "reference_translation": "联邦政府希望听障人士在日常生活中能得到更好的支持，例如在政府机关和医院配备更多的手语翻译员。",
+      "grammar_notes": {
+        "skeleton": "Die Bundes-Regierung（主语）+ will（情态动词，第二位）+ dass…（宾语从句，充当 wollen 的宾语）",
+        "structure": [
+          { "text": "Die Bundes-Regierung will,", "type": "主句", "explanation": "情态动词 will 位于第二位；它的宾语不是名词，而是后面整个 dass 从句。" },
+          { "text": "dass Menschen mit einer Hör-Behinderung im Alltag besser unterstützt werden,", "type": "dass 宾语从句", "explanation": "从句动词后置：被动态 unterstützt werden 位于从句末尾；Menschen 是从句主语，mit einer Hör-Behinderung 为后置定语。" },
+          { "text": "zum Beispiel durch mehr Gebärden-Dolmetscher in Ämtern und Kranken-Häusern.", "type": "补充说明（介词短语）", "explanation": "zum Beispiel 引出举例，durch + 四格表示“通过……方式”；in + 三格表示地点。" }
+        ],
+        "points": [
+          { "title": "wollen + dass 从句", "explanation": "当“想要”的主体与动作执行者不同（政府想要→别人被支持）时，用 wollen, dass … 而不是 wollen + 不定式。" },
+          { "title": "过程被动态 werden + Partizip II", "explanation": "unterstützt werden =“被支持”，从句中变位的 werden 放在最后。" },
+          { "title": "Leichte Sprache 的连字符", "explanation": "Bundes-Regierung、Hör-Behinderung 是易读德语的拆分写法，标准拼写为 Bundesregierung、Hörbehinderung。" }
+        ]
+      },
+      "analysis": {
+        "engine": "gemini-2.5-flash",
+        "generated_at": "2026-11-23T15:02:30+08:00"
+      }
+    }
+  ]
+}
