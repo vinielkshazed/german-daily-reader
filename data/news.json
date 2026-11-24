@@ -1,11 +1,11 @@
 {
   "version": 1,
-  "updated_at": "2026-11-25T00:43:42+08:00",
+  "updated_at": "2026-11-25T00:45:29+08:00",
   "items": [
     {
       "id": "2026-11-25",
       "date": "2026-11-25",
-      "fetched_at": "2026-11-25T00:43:42+08:00",
+      "fetched_at": "2026-11-25T00:45:29+08:00",
       "source": {
         "id": "dw_langsam",
         "name": "DW · Langsam gesprochene Nachrichten",
@@ -39,205 +39,191 @@
           "word": "Bei",
           "lemma": "bei",
           "pos": "介词（+三格）",
-          "meaning": ""
+          "meaning": "在……方面"
         },
         {
           "word": "einer",
-          "lemma": "einer",
-          "pos": "冠词",
-          "meaning": ""
+          "lemma": "eine",
+          "pos": "冠词（阴性·三格）",
+          "meaning": "一位"
         },
         {
           "word": "der",
-          "lemma": "der",
-          "pos": "冠词",
-          "meaning": ""
+          "lemma": "die",
+          "pos": "冠词（阴性·三格）",
+          "meaning": "的"
         },
         {
           "word": "Frauen",
-          "lemma": "Frau",
-          "pos": "名词（词性请查词典）",
-          "meaning": ""
+          "lemma": "die Frau",
+          "pos": "名词（阴性·复数）",
+          "meaning": "女性"
         },
         {
           "word": "mit",
           "lemma": "mit",
           "pos": "介词（+三格）",
-          "meaning": ""
+          "meaning": "与"
         },
         {
           "word": "denen",
-          "lemma": "der",
-          "pos": "实词（详见词典）",
-          "meaning": ""
+          "lemma": "die",
+          "pos": "关系代词（复数·三格）",
+          "meaning": "她们"
         },
         {
           "word": "er",
           "lemma": "er",
-          "pos": "代词",
-          "meaning": ""
+          "pos": "人称代词（阳性·主格）",
+          "meaning": "他"
         },
         {
           "word": "eine",
           "lemma": "eine",
-          "pos": "冠词",
-          "meaning": ""
+          "pos": "冠词（阴性·宾格）",
+          "meaning": "一段"
         },
         {
           "word": "Affäre",
-          "lemma": "Affäre",
-          "pos": "名词（词性请查词典）",
-          "meaning": ""
+          "lemma": "die Affäre",
+          "pos": "名词（阴性·单数）",
+          "meaning": "婚外情"
         },
         {
           "word": "gehabt",
           "lemma": "haben",
-          "pos": "动词（过去分词，可能）",
-          "meaning": ""
+          "pos": "动词（过去分词）",
+          "meaning": "有过"
         },
         {
           "word": "haben",
           "lemma": "haben",
-          "pos": "助动词/系动词",
-          "meaning": ""
+          "pos": "助动词",
+          "meaning": "有（构成完成时）"
         },
         {
           "word": "soll",
           "lemma": "sollen",
           "pos": "情态动词",
-          "meaning": ""
+          "meaning": "据说"
         },
         {
           "word": "US-Sicherheitsbehörden",
-          "lemma": "US-Sicherheitsbehörde",
-          "pos": "名词（词性请查词典）",
-          "meaning": ""
+          "lemma": "die US-Sicherheitsbehörde",
+          "pos": "名词（阴性·复数）",
+          "meaning": "美国安全部门"
         },
         {
           "word": "laut",
           "lemma": "laut",
-          "pos": "介词（+二/三格）",
-          "meaning": ""
+          "pos": "介词（+二格/三格）",
+          "meaning": "根据"
         },
         {
           "word": "Medienberichten",
-          "lemma": "Medienbericht",
-          "pos": "名词（词性请查词典）",
-          "meaning": ""
+          "lemma": "der Medienbericht",
+          "pos": "名词（阳性·复数）",
+          "meaning": "媒体报道"
         },
         {
           "word": "den",
-          "lemma": "den",
-          "pos": "冠词",
-          "meaning": ""
+          "lemma": "der",
+          "pos": "冠词（阳性·宾格）",
+          "meaning": "这个"
         },
         {
           "word": "Verdacht",
-          "lemma": "Verdacht",
-          "pos": "名词（词性请查词典）",
-          "meaning": ""
+          "lemma": "der Verdacht",
+          "pos": "名词（阳性·宾格）",
+          "meaning": "怀疑"
         },
         {
           "word": "dass",
           "lemma": "dass",
-          "pos": "连词（从属，动词后置）",
-          "meaning": ""
+          "pos": "连词（从属）",
+          "meaning": "即"
         },
         {
           "word": "sie",
           "lemma": "sie",
-          "pos": "代词",
-          "meaning": ""
+          "pos": "人称代词（阴性·主格）",
+          "meaning": "她"
         },
         {
           "word": "vom",
           "lemma": "von + dem",
-          "pos": "介词+冠词缩合（von+dem）",
-          "meaning": ""
+          "pos": "介词缩合（+三格）",
+          "meaning": "被（来自）"
         },
         {
           "word": "chinesischen",
           "lemma": "chinesisch",
-          "pos": "实词（详见词典）",
-          "meaning": ""
+          "pos": "形容词",
+          "meaning": "中国的"
         },
         {
           "word": "Geheimdienst",
-          "lemma": "Geheimdienst",
-          "pos": "名词（词性请查词典）",
-          "meaning": ""
+          "lemma": "der Geheimdienst",
+          "pos": "名词（阳性·三格）",
+          "meaning": "情报机构"
         },
         {
           "word": "angeworben",
           "lemma": "anwerben",
-          "pos": "动词（可能）",
-          "meaning": ""
+          "pos": "动词（过去分词）",
+          "meaning": "招募"
         },
         {
           "word": "worden",
           "lemma": "werden",
-          "pos": "助动词 werden（将来时/被动/虚拟）",
-          "meaning": ""
+          "pos": "助动词（被动完成时）",
+          "meaning": "被"
         },
         {
           "word": "war",
           "lemma": "sein",
-          "pos": "助动词/系动词",
-          "meaning": ""
+          "pos": "助动词（过去完成时）",
+          "meaning": "是"
         }
       ],
-      "reference_translation": "（暂无自动译文，请点击单词查词典，或使用第三步 AI 批改。）",
+      "reference_translation": "据媒体报道，对于其中一位据称与他有婚外情的女性，美国安全部门怀疑她曾被中国情报机构招募。",
       "grammar_notes": {
-        "skeleton": "（自动规则模式无法可靠识别主干，请参考下方结构拆分，或使用“第三步 AI 深度批改”。）",
+        "skeleton": "US-Sicherheitsbehörden haben den Verdacht (主语 + 变位动词 + 宾语)",
         "structure": [
           {
-            "text": "Bei einer der Frauen",
-            "type": "主句（或主句开头）",
-            "explanation": "陈述句中变位动词位于第二位。"
+            "text": "Bei einer der Frauen, mit denen er eine Affäre gehabt haben soll,",
+            "type": "介词短语（含关系从句）",
+            "explanation": "位于句首，强调对象。其中包含一个由 mit 引导的关系从句，修饰 Frauen。"
           },
           {
-            "text": "mit denen er eine Affäre gehabt haben soll",
-            "type": "补充/插入成分",
-            "explanation": "请结合上下文判断其修饰对象。"
+            "text": "haben US-Sicherheitsbehörden laut Medienberichten den Verdacht,",
+            "type": "主句",
+            "explanation": "动词 haben 位于第二位，laut 插入语说明信息来源。"
           },
           {
-            "text": "haben US-Sicherheitsbehörden laut Medienberichten den Verdacht",
-            "type": "补充/插入成分",
-            "explanation": "请结合上下文判断其修饰对象。"
-          },
-          {
-            "text": "dass sie vom chinesischen Geheimdienst angeworben worden war",
-            "type": "dass 引导的从句",
-            "explanation": "从句中的变位动词通常位于从句末尾。"
+            "text": "dass sie vom chinesischen Geheimdienst angeworben worden war.",
+            "type": "宾语从句",
+            "explanation": "dass 引导从句，动词位于句末，采用被动语态的过去完成时。"
           }
         ],
         "points": [
           {
-            "title": "情态动词 + 不定式（框型结构）",
-            "explanation": "情态动词变位后放在第二位，实义动词不定式放在句末（从句中则一起放在末尾）。"
+            "title": "情态动词的虚拟用法 (soll)",
+            "explanation": "此处 sollen 表示转述他人观点或传闻，即“据称”，不代表事实确定。"
           },
           {
-            "title": "被动态 werden + 过去分词（可能）",
-            "explanation": "句中出现 werden 的变位形式和过去分词，可能构成“被……”的被动态。"
+            "title": "被动语态的过去完成时",
+            "explanation": "angeworben worden war 结构：被动语态 (werden + PII) + 过去完成时 (war)，表示在过去某个时间点之前已经发生的被动动作。"
           },
           {
-            "title": "完成时 haben/sein + 过去分词（可能）",
-            "explanation": "助动词 haben/sein 变位放第二位，过去分词放句末。"
-          },
-          {
-            "title": "从句动词后置",
-            "explanation": "dass / weil / wenn 等从属连词及关系代词引导的从句，变位动词位于从句最后。"
-          },
-          {
-            "title": "易读德语（Leichte Sprache）的连字符",
-            "explanation": "长复合词被连字符拆开以便阅读，标准拼写需去掉连字符并把后半部分小写。"
+            "title": "关系从句的格支配",
+            "explanation": "mit denen：介词 mit 要求第三格，因此关系代词 die 变为 denen。"
           }
-        ],
-        "note": "⚠️ 本条解析由规则 + 免费机器翻译自动生成，仅供参考。"
+        ]
       },
       "analysis": {
-        "engine": "fallback",
-        "generated_at": "2026-11-25T00:43:46+08:00"
+        "engine": "gemini-3.1-flash-lite",
+        "generated_at": "2026-11-25T00:45:38+08:00"
       }
     },
     {
