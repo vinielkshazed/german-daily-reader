@@ -84,6 +84,7 @@ jobs:
     if: ${{ !cancelled() && (needs.fetch.result == 'success' || needs.fetch.result == 'skipped') }}
     runs-on: ubuntu-latest
     permissions:
+      actions: read
       contents: read
       pages: write
       id-token: write
@@ -100,9 +101,39 @@ jobs:
         uses: actions/configure-pages@v5
 
       - name: Upload site
+        id: upload
         uses: actions/upload-pages-artifact@v3
         with:
           path: "."
+
+      - name: Wait for Pages artifact
+        shell: bash
+        timeout-minutes: 2
+        env:
+          GH_TOKEN: ${{ github.token }}
+          UPLOADED_ARTIFACT_ID: ${{ steps.upload.outputs.artifact_id }}
+        run: |
+          if [[ ! "$UPLOADED_ARTIFACT_ID" =~ ^[0-9]+$ ]]; then
+            echo "::error::Pages upload did not return an artifact ID."
+            exit 1
+          fi
+
+          for attempt in {1..12}; do
+            if visible_id=$(gh api --method GET \
+              "repos/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID/artifacts?name=github-pages" \
+              --jq '.artifacts[] | select(.expired == false) | .id') &&
+              [[ "$visible_id" == "$UPLOADED_ARTIFACT_ID" ]]; then
+              echo "Pages artifact $UPLOADED_ARTIFACT_ID is visible."
+              exit 0
+            fi
+            if (( attempt < 12 )); then
+              echo "Waiting for Pages artifact $UPLOADED_ARTIFACT_ID ($attempt/12)."
+              sleep 5
+            fi
+          done
+
+          echo "::error::Pages artifact $UPLOADED_ARTIFACT_ID did not become visible in this run."
+          exit 1
 
       - name: Deploy
         id: deployment
