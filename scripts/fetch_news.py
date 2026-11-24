@@ -43,6 +43,7 @@ import re
 import sys
 import tempfile
 from dataclasses import dataclass
+from html import unescape
 from pathlib import Path
 from typing import Any
 from urllib.parse import urljoin, urlparse, urlunparse, parse_qsl, urlencode
@@ -448,8 +449,10 @@ def discover_candidates(source: dict, seen: set[str]) -> list[Candidate]:
 # --------------------------------------------------------------------------- #
 # 正文 & 音频提取
 # --------------------------------------------------------------------------- #
+# 普通字符和转义斜杠分别匹配，避免同一段 URL 被反复拆分。
 _AUDIO_IN_RAW = re.compile(
-    r"https?:(?:\\?/){2}[^\s\"'<>\\]+(?:\\?/[^\s\"'<>\\]+)*?\.(?:mp3|m4a|aac|ogg)(?:\?[^\s\"'<>\\]*)?",
+    r"https?:(?:\\?/){2}(?:[^\s\"'<>\\]|\\/)+\.(?:mp3|m4a|aac|ogg)"
+    r"(?:\?(?:[^\s\"'<>\\]|\\/)*)?(?=$|[\s\"'<>\\),;\]}])",
     re.I)
 _BOILERPLATE = re.compile(
     r"(cookie|javascript|©|copyright|datenschutz|impressum|newsletter|alle rechte|"
@@ -471,7 +474,7 @@ def find_audio(soup, raw: str, base: str) -> dict | None:
     for a in soup.find_all("a", href=True):
         if _AUDIO_EXT.search(a["href"]):
             found.append(urljoin(base, a["href"]))
-    for m in _AUDIO_IN_RAW.finditer(raw):
+    for m in _AUDIO_IN_RAW.finditer(unescape(raw)):
         found.append(m.group(0).replace("\\/", "/"))
     found = [u for u in dict.fromkeys(found) if u.startswith("http")]
     if not found:
