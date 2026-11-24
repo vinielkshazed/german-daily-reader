@@ -135,6 +135,28 @@ jobs:
           echo "::error::Pages artifact $UPLOADED_ARTIFACT_ID did not become visible in this run."
           exit 1
 
+      # deploy-pages looks up the artifact through the runner's artifact service.
+      - name: Check the Pages artifact can be read
+        id: read_artifact
+        continue-on-error: true
+        timeout-minutes: 1
+        uses: actions/download-artifact@v5
+        with:
+          artifact-ids: ${{ steps.upload.outputs.artifact_id }}
+          path: ${{ runner.temp }}/pages-artifact-check
+
+      - name: Wait for the artifact service
+        if: steps.read_artifact.outcome == 'failure'
+        run: sleep 20
+
+      - name: Recheck the Pages artifact
+        if: steps.read_artifact.outcome == 'failure'
+        timeout-minutes: 1
+        uses: actions/download-artifact@v5
+        with:
+          artifact-ids: ${{ steps.upload.outputs.artifact_id }}
+          path: ${{ runner.temp }}/pages-artifact-check
+
       - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v4
