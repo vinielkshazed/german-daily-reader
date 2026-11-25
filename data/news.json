@@ -1,7 +1,256 @@
 {
   "version": 1,
-  "updated_at": "2026-11-25T00:45:29+08:00",
+  "updated_at": "2026-11-26T01:43:02+08:00",
   "items": [
+    {
+      "id": "2026-11-26",
+      "date": "2026-11-26",
+      "fetched_at": "2026-11-26T01:43:02+08:00",
+      "source": {
+        "id": "mdr_leicht",
+        "name": "MDR · Nachrichten in Leichter Sprache",
+        "level": "Leichte Sprache",
+        "homepage": "https://www.mdr.de/nachrichten-leicht/"
+      },
+      "title": "Nachrichten in Leichter Sprache - aus Mitteldeutschland",
+      "url": "https://www.mdr.de/nachrichten/podcast/leichte-sprache",
+      "published": "2026-05-28T07:50:42Z",
+      "audio": {
+        "url": "https://ondemand.unified.mdr.de/mdr/audio/weltweit/2026/11/25/mdrde-5f9fef21-cbc7-4944-8f37-c16f8285bc0d.mp3128.mp3",
+        "mime": "audio/mpeg",
+        "duration": ""
+      },
+      "paragraphs": [
+        "+ In vielen Arzt-Praxen fehlt Grippe-Impf-Stoff + Mitarbeiter von Opel in Eisenach streiken + Der Kopf vom Karl-Marx-Denkmal wird geöffnet + In vielen Städten sind die Weihnachts-Märkte offen +",
+        "+ Angriffe auf Polizisten nach Gen Z Demo in Leipzig + Unter der Erde brennt es bei Meuselwitz + Viele Weihnachts-Märkte öffnen heute + 3 Eishockey-Mannschaften aus Sachsen gewinnen +",
+        "+ Neue Regeln fürs Bezahlen beim Internet-Einkauf + Höchstes Windrad der Welt in der Lausitz + Löwen im Erfurter Zoo bekommen öfter ganze Tiere als Futter + Große Reise-Messe in Leipzig + Kultur-Tipps fürs Wochen-Ende +",
+        "+ Strom soll bald weniger kosten + Züge zwischen Halle und Magdeburg haben Verspätungen + Schnell-Läuferin Rebekka Haase kommt zurück nach Sachsen + Viele Kinder machen bei einem großen Sportfest in Bad Blankenburg mit +",
+        "+ Die Menschen in Sachsen-Anhalt sind besonders zufrieden + Thüringen: Helfer für Menschen mit Demenz + Thüringen will die Menschen besser vor Hochwasser schützen + Mehr Polizei auf den Weihnachts-Märkten in Sachsen +"
+      ],
+      "sentence": "+ Neue Regeln fürs Bezahlen beim Internet-Einkauf + Höchstes Windrad der Welt in der Lausitz + Löwen im Erfurter Zoo bekommen öfter ganze Tiere als Futter + Große Reise-Messe in Leipzig + Kultur-Tipps fürs Wochen-Ende +",
+      "sentence_meta": {
+        "paragraph_index": 2,
+        "word_count": 30,
+        "meets_min_words": true
+      },
+      "vocab_list": [
+        {
+          "word": "Neue",
+          "lemma": "neu",
+          "pos": "形容词",
+          "meaning": "新的"
+        },
+        {
+          "word": "Regeln",
+          "lemma": "die Regel",
+          "pos": "名词（阴性·复数）",
+          "meaning": "规则"
+        },
+        {
+          "word": "fürs",
+          "lemma": "für + das",
+          "pos": "介词（+四格）+ 冠词（中性·四格）",
+          "meaning": "为了"
+        },
+        {
+          "word": "Bezahlen",
+          "lemma": "das Bezahlen",
+          "pos": "名词（中性）",
+          "meaning": "支付"
+        },
+        {
+          "word": "beim",
+          "lemma": "bei + dem",
+          "pos": "介词（+三格）+ 冠词（中性·三格）",
+          "meaning": "在...时"
+        },
+        {
+          "word": "Internet-Einkauf",
+          "lemma": "der Interneteinkauf",
+          "pos": "名词（阳性）",
+          "meaning": "网购"
+        },
+        {
+          "word": "Höchstes",
+          "lemma": "hoch",
+          "pos": "形容词（最高级）",
+          "meaning": "最高的"
+        },
+        {
+          "word": "Windrad",
+          "lemma": "das Windrad",
+          "pos": "名词（中性）",
+          "meaning": "风力发电机"
+        },
+        {
+          "word": "der",
+          "lemma": "der",
+          "pos": "冠词（阴性·二格）",
+          "meaning": "的（所属关系）"
+        },
+        {
+          "word": "Welt",
+          "lemma": "die Welt",
+          "pos": "名词（阴性）",
+          "meaning": "世界"
+        },
+        {
+          "word": "in",
+          "lemma": "in",
+          "pos": "介词（+三格）",
+          "meaning": "在...里"
+        },
+        {
+          "word": "Lausitz",
+          "lemma": "die Lausitz",
+          "pos": "专有名词",
+          "meaning": "劳西茨地区"
+        },
+        {
+          "word": "Löwen",
+          "lemma": "der Löwe",
+          "pos": "名词（阳性·复数）",
+          "meaning": "狮子"
+        },
+        {
+          "word": "im",
+          "lemma": "in + dem",
+          "pos": "介词（+三格）+ 冠词（中性·三格）",
+          "meaning": "在...里"
+        },
+        {
+          "word": "Erfurter",
+          "lemma": "Erfurter",
+          "pos": "形容词（地名派生）",
+          "meaning": "埃尔福特的"
+        },
+        {
+          "word": "Zoo",
+          "lemma": "der Zoo",
+          "pos": "名词（阳性）",
+          "meaning": "动物园"
+        },
+        {
+          "word": "bekommen",
+          "lemma": "bekommen",
+          "pos": "动词",
+          "meaning": "得到"
+        },
+        {
+          "word": "öfter",
+          "lemma": "oft",
+          "pos": "副词（比较级）",
+          "meaning": "更经常地"
+        },
+        {
+          "word": "ganze",
+          "lemma": "ganz",
+          "pos": "形容词",
+          "meaning": "完整的"
+        },
+        {
+          "word": "Tiere",
+          "lemma": "das Tier",
+          "pos": "名词（中性·复数）",
+          "meaning": "动物"
+        },
+        {
+          "word": "als",
+          "lemma": "als",
+          "pos": "连词",
+          "meaning": "作为"
+        },
+        {
+          "word": "Futter",
+          "lemma": "das Futter",
+          "pos": "名词（中性）",
+          "meaning": "饲料"
+        },
+        {
+          "word": "Große",
+          "lemma": "groß",
+          "pos": "形容词",
+          "meaning": "大型的"
+        },
+        {
+          "word": "Reise-Messe",
+          "lemma": "die Reisemesse",
+          "pos": "名词（阴性）",
+          "meaning": "旅游博览会"
+        },
+        {
+          "word": "Leipzig",
+          "lemma": "Leipzig",
+          "pos": "专有名词",
+          "meaning": "莱比锡"
+        },
+        {
+          "word": "Kultur-Tipps",
+          "lemma": "der Kulturtipp",
+          "pos": "名词（阳性·复数）",
+          "meaning": "文化活动建议"
+        },
+        {
+          "word": "Wochen-Ende",
+          "lemma": "das Wochenende",
+          "pos": "名词（中性）",
+          "meaning": "周末"
+        }
+      ],
+      "reference_translation": "网购支付新规；劳西茨拥有世界最高风力发电机；埃尔福特动物园的狮子更常获得整只动物作为饲料；莱比锡举办大型旅游博览会；周末文化活动推荐。",
+      "grammar_notes": {
+        "skeleton": "Diese Sätze sind Schlagzeilen (标题), oft ohne Verb (无动词结构).",
+        "structure": [
+          {
+            "text": "Neue Regeln fürs Bezahlen beim Internet-Einkauf",
+            "type": "名词短语",
+            "explanation": "由名词中心词Regeln引导，后接介词短语作定语。"
+          },
+          {
+            "text": "Höchstes Windrad der Welt in der Lausitz",
+            "type": "名词短语",
+            "explanation": "最高级形容词修饰名词，后接二格定语表示所属。"
+          },
+          {
+            "text": "Löwen im Erfurter Zoo bekommen öfter ganze Tiere als Futter",
+            "type": "完整句子",
+            "explanation": "主语(Löwen) + 谓语(bekommen) + 宾语(Tiere) + 状语(öfter) + 补足语(als Futter)。"
+          },
+          {
+            "text": "Große Reise-Messe in Leipzig",
+            "type": "名词短语",
+            "explanation": "名词短语，省略了动词“findet statt”的标题写法。"
+          },
+          {
+            "text": "Kultur-Tipps fürs Wochen-Ende",
+            "type": "名词短语",
+            "explanation": "介词短语fürs表示用途。"
+          }
+        ],
+        "points": [
+          {
+            "title": "易读德语连字符 (Leichte Sprache)",
+            "explanation": "为了降低阅读难度，复合词中间使用连字符（如Internet-Einkauf），方便读者识别词根。"
+          },
+          {
+            "title": "缩合词 (Verschmelzung)",
+            "explanation": "介词与冠词合并，如 fürs (für das), beim (bei dem), im (in dem)，是德语口语和书面语中非常高频的用法。"
+          },
+          {
+            "title": "二格定语 (Genitivattribut)",
+            "explanation": "der Welt 修饰 Windrad，表示所属关系，即“世界的最高风力发电机”。"
+          },
+          {
+            "title": "标题省略法",
+            "explanation": "新闻标题常省略动词（如“ist”或“findet statt”），以达到简洁明了的效果。"
+          }
+        ]
+      },
+      "analysis": {
+        "engine": "gemini-3.1-flash-lite",
+        "generated_at": "2026-11-26T01:43:17+08:00"
+      }
+    },
     {
       "id": "2026-11-25",
       "date": "2026-11-25",
