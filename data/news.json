@@ -1,7 +1,197 @@
 {
   "version": 1,
-  "updated_at": "2026-11-28T00:07:48+08:00",
+  "updated_at": "2026-11-28T01:05:54+08:00",
   "items": [
+    {
+      "id": "2026-11-28",
+      "date": "2026-11-28",
+      "fetched_at": "2026-11-28T01:05:54+08:00",
+      "source": {
+        "id": "mdr_leicht",
+        "name": "MDR · Nachrichten in Leichter Sprache",
+        "level": "Leichte Sprache",
+        "homepage": "https://www.mdr.de/nachrichten-leicht/"
+      },
+      "title": "Leichte Sprache: Immer mehr Menschen mit Behinderung haben keine Arbeit",
+      "url": "https://www.mdr.de/nachrichten-leicht/leichte-sprache-mittel-deutschland-rekordhoch-bei-behinderten-arbeitslosen-100.html",
+      "published": "2026-11-27T15:03:16Z",
+      "audio": {
+        "url": "https://ondemand.unified.mdr.de/mdr/audio/weltweit/2026/11/27/mdrde-82a91a60-099a-496a-98a7-34dbe46886aa.mp3128.mp3",
+        "mime": "audio/mpeg",
+        "duration": ""
+      },
+      "paragraphs": [
+        "Die Aktion Mensch hat im Jahr 2025 eine Untersuchung gemacht. Fach-Leute haben untersucht: • Wie viele Menschen mit einer Behinderung keine Arbeit haben. • Und warum sie keine Arbeit haben. Die Fach-Leute haben heraus-gefunden: • Dass sehr viele Menschen mit Behinderung keine Arbeit haben. • Und dass noch nie so viele Menschen mit Behinderung arbeitslos waren.",
+        "Von 100 Menschen mit einer Behinderung hatten im Jahr 2025 ungefähr 12 Menschen keine Arbeit. Bei Menschen ohne Behinderung waren es nur ungefähr 6 von 100 Menschen.",
+        "Warum so viele Menschen mit Behinderung keine Arbeit haben",
+        "Die Aktion Mensch hat gesagt: Viele Firmen haben jetzt große Geld-Probleme. Deshalb wollen die Firmen Geld sparen. Zum Beispiel: • Sie stellen weniger neue Mitarbeiter ein. Das bedeutet: Immer weniger Menschen bekommen eine neue Arbeit in der Firma. • Oder immer mehr Menschen verlieren ihre Arbeit. Das ist besonders für Menschen mit Behinderung ein Problem. Denn für sie ist es oft schwerer: Eine neue Arbeit zu finden.",
+        "Auch im Jahr 2026 gibt es viele Probleme",
+        "Die Aktion Mensch denkt: Auch im Jahr 2026 werden viele Menschen mit Behinderung keine Arbeit haben. Im Oktober vom Jahr 2026 hatten in Deutschland ungefähr 193 Tausend Menschen mit Behinderung keine Arbeit. Das waren mehr Menschen als im Oktober vom Jahr 2025.",
+        "Außerdem wollen immer mehr Firmen Menschen mit Behinderung entlassen. Das bedeutet: Die Menschen sollen ihre Arbeit verlieren.",
+        "Menschen mit Behinderung haben einen besonderen Schutz",
+        "Deshalb dürfen Firmen die Menschen mit Behinderung nicht einfach entlassen. Die Firmen müssen vorher ein Amt fragen. Das Amt heißt: Integrations-Amt.",
+        "Das Integrations-Amt prüft: Warum der Mensch seine Arbeit verlieren soll. Danach entscheidet das Amt: • Ob die Firma den Menschen entlassen darf. • Oder ob die Firma den Menschen nicht entlassen darf.",
+        "Im Jahr 2025 haben die Firmen besonders oft beim Integrations-Amt gefragt: Ob sie einen Menschen mit Behinderung entlassen dürfen. Ungefähr 26 Tausend Mal haben Firmen danach gefragt. Das war viel öfter als im Jahr 2024.",
+        "Die Aktion Mensch will mehr Arbeits-Plätze für Menschen mit Behinderung",
+        "Die Aktion Mensch hat gesagt: Menschen mit Behinderung sind wichtig für die Firmen. Denn alle Menschen sind verschieden. Sie haben verschiedene Fähigkeiten. Das bedeutet: Sie können unterschiedliche Sachen gut. Und sie haben verschiedene Ideen.",
+        "Wenn Menschen mit unterschiedlichen Fähigkeiten zusammen-arbeiten: Dann gibt es vielleicht viele neue gute Ideen. Deshalb sollen in den Firmen mehr Menschen mit Behinderung arbeiten. Und die Firmen sollen ihnen gute Arbeits-Plätze geben."
+      ],
+      "sentence": "Die Fach-Leute haben heraus-gefunden: • Dass sehr viele Menschen mit Behinderung keine Arbeit haben. • Und dass noch nie so viele Menschen mit Behinderung arbeitslos waren.",
+      "sentence_meta": {
+        "paragraph_index": 0,
+        "word_count": 24,
+        "meets_min_words": true
+      },
+      "vocab_list": [
+        {
+          "word": "Die",
+          "lemma": "der/die/das",
+          "pos": "冠词（定冠词·阴性·复数·主格）",
+          "meaning": "定冠词"
+        },
+        {
+          "word": "Fach-Leute",
+          "lemma": "die Fachleute",
+          "pos": "名词（复数）",
+          "meaning": "专家"
+        },
+        {
+          "word": "haben",
+          "lemma": "haben",
+          "pos": "助动词（完成时）",
+          "meaning": "有（构成完成时）"
+        },
+        {
+          "word": "heraus-gefunden",
+          "lemma": "herausfinden",
+          "pos": "动词（过去分词）",
+          "meaning": "发现、查明"
+        },
+        {
+          "word": "Dass",
+          "lemma": "dass",
+          "pos": "连词（从属）",
+          "meaning": "引导从句"
+        },
+        {
+          "word": "sehr",
+          "lemma": "sehr",
+          "pos": "副词",
+          "meaning": "非常"
+        },
+        {
+          "word": "viele",
+          "lemma": "viel",
+          "pos": "形容词/代词",
+          "meaning": "许多"
+        },
+        {
+          "word": "Menschen",
+          "lemma": "der Mensch",
+          "pos": "名词（复数）",
+          "meaning": "人"
+        },
+        {
+          "word": "mit",
+          "lemma": "mit",
+          "pos": "介词（+三格）",
+          "meaning": "带有、具有"
+        },
+        {
+          "word": "Behinderung",
+          "lemma": "die Behinderung",
+          "pos": "名词（阴性）",
+          "meaning": "残疾"
+        },
+        {
+          "word": "keine",
+          "lemma": "kein",
+          "pos": "否定冠词",
+          "meaning": "没有"
+        },
+        {
+          "word": "Arbeit",
+          "lemma": "die Arbeit",
+          "pos": "名词（阴性）",
+          "meaning": "工作"
+        },
+        {
+          "word": "Und",
+          "lemma": "und",
+          "pos": "连词（并列）",
+          "meaning": "和"
+        },
+        {
+          "word": "noch",
+          "lemma": "noch",
+          "pos": "副词",
+          "meaning": "仍然、至今"
+        },
+        {
+          "word": "nie",
+          "lemma": "nie",
+          "pos": "副词",
+          "meaning": "从不"
+        },
+        {
+          "word": "so",
+          "lemma": "so",
+          "pos": "副词",
+          "meaning": "如此"
+        },
+        {
+          "word": "arbeitslos",
+          "lemma": "arbeitslos",
+          "pos": "形容词",
+          "meaning": "失业的"
+        },
+        {
+          "word": "waren",
+          "lemma": "sein",
+          "pos": "动词（过去时）",
+          "meaning": "是（过去时）"
+        }
+      ],
+      "reference_translation": "专家们发现：许多残疾人没有工作，而且残疾人的失业人数从未如此之多。",
+      "grammar_notes": {
+        "skeleton": "Die Fach-Leute haben heraus-gefunden (主语+助动词+过去分词)",
+        "structure": [
+          {
+            "text": "Die Fach-Leute haben heraus-gefunden:",
+            "type": "主句",
+            "explanation": "句子的核心主句，采用完成时结构。"
+          },
+          {
+            "text": "Dass sehr viele Menschen mit Behinderung keine Arbeit haben.",
+            "type": "宾语从句",
+            "explanation": "由dass引导，动词haben置于句末。"
+          },
+          {
+            "text": "Und dass noch nie so viele Menschen mit Behinderung arbeitslos waren.",
+            "type": "宾语从句",
+            "explanation": "与前一个从句并列，同样由dass引导，动词waren置于句末。"
+          }
+        ],
+        "points": [
+          {
+            "title": "从句语序",
+            "explanation": "在dass引导的从句中，变位动词必须位于从句句末。"
+          },
+          {
+            "title": "完成时结构",
+            "explanation": "haben + 过去分词（herausgefunden）构成现在完成时，用于描述已发生的调查结果。"
+          },
+          {
+            "title": "易读德语（Leichte Sprache）连字符",
+            "explanation": "为了降低阅读难度，将复合词（如Fach-Leute）通过连字符拆分，不改变词义。"
+          }
+        ]
+      },
+      "analysis": {
+        "engine": "gemini-3.1-flash-lite",
+        "generated_at": "2026-11-28T01:06:14+08:00"
+      }
+    },
     {
       "id": "2026-11-27",
       "date": "2026-11-27",
