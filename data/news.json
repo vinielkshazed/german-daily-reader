@@ -1,7 +1,238 @@
 {
   "version": 1,
-  "updated_at": "2026-11-26T01:43:02+08:00",
+  "updated_at": "2026-11-28T00:07:48+08:00",
   "items": [
+    {
+      "id": "2026-11-27",
+      "date": "2026-11-27",
+      "fetched_at": "2026-11-28T00:07:48+08:00",
+      "source": {
+        "id": "dw_langsam",
+        "name": "DW · Langsam gesprochene Nachrichten",
+        "level": "Langsam gesprochen (B2)",
+        "homepage": "https://learngerman.dw.com/de/langsam-gesprochene-nachrichten/s-60040332"
+      },
+      "title": "27.11.2026 – Langsam Gesprochene Nachrichten",
+      "url": "https://learngerman.dw.com/de/27-11-2026-langsam-gesprochene-nachrichten/a-80072390?maca=de-DKpodcast_lgn_de-2288-xml-mrss",
+      "published": "Fri, 27 Nov 2026 10:21:00 GMT",
+      "audio": {
+        "url": "https://radiodownloaddw-a.akamaihd.net/Events/podcasts/de/2288_DKpodcast_lgn_de/C47D4037_2-podcast-2288-80072390.mp3",
+        "mime": "audio/mpeg",
+        "duration": "09:56"
+      },
+      "paragraphs": [
+        "Die Staats- und Regierungschefs der Europäischen Union haben ihren Sondergipfel zur Finanzplanung bis 2034 in Brüssel vorzeitig und ohne nennenswerte Fortschritte beendet. Die Vorstellungen über Umfang und Verteilung der Mittel lägen noch weit auseinander, sagte Bundeskanzler Friedrich Merz. Deutschland und sechs weitere Nettozahlerstaaten dringen auf eine deutliche Kürzung des derzeit diskutierten Haushaltsvolumens von 1,78 Billionen Euro. Andere Mitgliedstaaten lehnen weitere Einsparungen ab und pochen auf hohe Ausgaben für die Landwirtschaft und strukturschwache Regionen. Merz und Frankreichs Präsident Emmanuel Macron wollen beim nächsten EU-Gipfel im Dezember eine Einigung erzielen.",
+        "Der Spanier Pablo Hernández de Cos soll neuer Präsident der Europäischen Zentralbank (EZB) werden. Wie Diplomaten in Brüssel mitteilten, verständigten sich die Staats- und Regierungschefs der EU bei ihrem Gipfel auf die Personalie. Die amtierende EZB-Präsidentin, die französische Juristin Christine Lagarde, tritt zum 7. Februar vorzeitig von ihrem Posten zurück. Hernández de Cos ist derzeit Chef der Bank für Internationalen Zahlungsausgleich (BIZ). Zuvor war er von 2018 bis 2024 Präsident der spanischen Zentralbank und saß damit im Rat der EZB, der über die Leitzinsen entscheidet. Den Angaben zufolge fiel die Entscheidung unter den EU-Staats- und Regierungschefs einstimmig.",
+        "Neuseeland steht nach dem knappen Ausgang der Parlamentswahl vor schwierigen Koalitionsverhandlungen. Das konservative Regierungsbündnis von Ministerpräsident Christopher Luxon verfehlte nach dem amtlichen Endergebnis mit 65 der 130 Parlamentssitze die absolute Mehrheit um ein Mandat. Das Oppositionslager aus Sozialdemokraten, Grünen und der Maori-Partei kommt auf 58 Sitze. Der neuen Mitte-Partei Opportunity fällt mit sieben Mandaten eine Schlüsselrolle zu. Parteichefin Qiulae Wong erklärte sich zu Gesprächen mit beiden politischen Lagern bereit. Luxon hatte eine Zusammenarbeit mit Opportunity vor der Wahl ausgeschlossen. Sollte keine Regierungsbildung gelingen, könnten Neuwahlen nötig werden.",
+        "Am 27. Dezember soll in Serbien ein Nachfolger für Staatschef Aleksandar Vučić bestimmt werden. Dieser war im September zurückgetreten. Den Wahltermin gab der neue serbische Parlamentspräsident Aleksandar Čupić in der Hauptstadt Belgrad bekannt. Čupić war nach dem Sieg der oppositionellen Studentenliste bei der Parlamentswahl Ende Oktober in das Amt gewählt worden. Die Liste der von Studentinnen und Studenten initiierten breiten Protestbewegung in Serbien hatte bei der Wahl die absolute Mehrheit im Parlament gewonnen. Der Präsident hat überwiegend repräsentative Aufgaben. Er kann jedoch den Regierungschef vorschlagen und ist Oberbefehlshaber der Streitkräfte.",
+        "Ein schwerer Sturm hat in den USA am Feiertag Thanksgiving massive Stromausfälle und Verkehrsbehinderungen verursacht. Mehr als 900.000 Haushalte und Unternehmen waren zeitweise ohne Strom. Besonders betroffen waren die Bundesstaaten Pennsylvania, Maryland und Virginia. Entlang der Ostküste kam es zu Überschwemmungen, vielerorts stürzten Bäume auf Stromleitungen und Häuser. Wichtige Brücken wurden gesperrt. Landesweit fielen knapp 400 Flüge aus, mehr als 2000 weitere waren verspätet. In New York wurde die traditionelle Thanksgiving-Parade erstmals in ihrer hundertjährigen Geschichte verschoben. Auch an der Westküste führten extreme Wetterbedingungen in einigen Gebieten zu Evakuierungen.",
+        "Der deutsche Agrarchemie- und Pharmakonzern Bayer baut seine Präsenz in Asien aus. Das Unternehmen will bis zu 500 Millionen Euro in seinen Pharmastandort in Chinas Hauptstadt Peking investieren. Das teilte der Konzern mit, der seinen Sitz in Leverkusen bei Köln hat. In der erweiterten Anlage sollen zunächst Medikamente gegen Herz-Kreislauf-Erkrankungen hergestellt werden. Für die Zukunft plane man auch die Erzeugung von Krebsmedikamenten – vor allem für den chinesischen Markt, hieß es. Der Produktionsstart ist für 2032 vorgesehen. Neben Peking hat Bayer noch drei weitere Standorte in China."
+      ],
+      "sentence": "Den Wahltermin gab der neue serbische Parlamentspräsident Aleksandar Čupić in der Hauptstadt Belgrad bekannt. Čupić war nach dem Sieg der oppositionellen Studentenliste bei der Parlamentswahl Ende Oktober in das Amt gewählt worden.",
+      "sentence_meta": {
+        "paragraph_index": 3,
+        "word_count": 32,
+        "meets_min_words": true
+      },
+      "vocab_list": [
+        {
+          "word": "Den",
+          "lemma": "der",
+          "pos": "冠词（阳性·四格）",
+          "meaning": "定冠词"
+        },
+        {
+          "word": "Wahltermin",
+          "lemma": "der Wahltermin",
+          "pos": "名词（阳性）",
+          "meaning": "选举日期"
+        },
+        {
+          "word": "gab",
+          "lemma": "geben",
+          "pos": "动词（过去式）",
+          "meaning": "给予/给出"
+        },
+        {
+          "word": "der",
+          "lemma": "der",
+          "pos": "冠词（阳性·一格）",
+          "meaning": "定冠词"
+        },
+        {
+          "word": "neue",
+          "lemma": "neu",
+          "pos": "形容词",
+          "meaning": "新的"
+        },
+        {
+          "word": "serbische",
+          "lemma": "serbisch",
+          "pos": "形容词",
+          "meaning": "塞尔维亚的"
+        },
+        {
+          "word": "Parlamentspräsident",
+          "lemma": "der Parlamentspräsident",
+          "pos": "名词（阳性）",
+          "meaning": "议长"
+        },
+        {
+          "word": "Aleksandar",
+          "lemma": "Aleksandar",
+          "pos": "专有名词",
+          "meaning": "亚历山大（人名）"
+        },
+        {
+          "word": "Čupić",
+          "lemma": "Čupić",
+          "pos": "专有名词",
+          "meaning": "丘皮奇（姓氏）"
+        },
+        {
+          "word": "in",
+          "lemma": "in",
+          "pos": "介词（+三格）",
+          "meaning": "在……里"
+        },
+        {
+          "word": "Hauptstadt",
+          "lemma": "die Hauptstadt",
+          "pos": "名词（阴性）",
+          "meaning": "首都"
+        },
+        {
+          "word": "Belgrad",
+          "lemma": "Belgrad",
+          "pos": "专有名词",
+          "meaning": "贝尔格莱德"
+        },
+        {
+          "word": "bekannt",
+          "lemma": "bekannt",
+          "pos": "形容词",
+          "meaning": "已知的"
+        },
+        {
+          "word": "war",
+          "lemma": "sein",
+          "pos": "助动词（过去式）",
+          "meaning": "是"
+        },
+        {
+          "word": "nach",
+          "lemma": "nach",
+          "pos": "介词（+三格）",
+          "meaning": "在……之后"
+        },
+        {
+          "word": "dem",
+          "lemma": "dem",
+          "pos": "冠词",
+          "meaning": ""
+        },
+        {
+          "word": "Sieg",
+          "lemma": "der Sieg",
+          "pos": "名词（阳性）",
+          "meaning": "胜利"
+        },
+        {
+          "word": "oppositionellen",
+          "lemma": "oppositionell",
+          "pos": "形容词",
+          "meaning": "反对派的"
+        },
+        {
+          "word": "Studentenliste",
+          "lemma": "die Studentenliste",
+          "pos": "名词（阴性）",
+          "meaning": "学生名单/党派"
+        },
+        {
+          "word": "bei",
+          "lemma": "bei",
+          "pos": "介词（+三格）",
+          "meaning": "在……时"
+        },
+        {
+          "word": "Parlamentswahl",
+          "lemma": "die Parlamentswahl",
+          "pos": "名词（阴性）",
+          "meaning": "议会选举"
+        },
+        {
+          "word": "Ende",
+          "lemma": "das Ende",
+          "pos": "名词（中性）",
+          "meaning": "末尾"
+        },
+        {
+          "word": "Oktober",
+          "lemma": "der Oktober",
+          "pos": "名词（阳性）",
+          "meaning": "十月"
+        },
+        {
+          "word": "das",
+          "lemma": "das",
+          "pos": "冠词",
+          "meaning": ""
+        },
+        {
+          "word": "Amt",
+          "lemma": "das Amt",
+          "pos": "名词（中性）",
+          "meaning": "职位"
+        },
+        {
+          "word": "gewählt",
+          "lemma": "wählen",
+          "pos": "动词（过去分词）",
+          "meaning": "选举"
+        },
+        {
+          "word": "worden",
+          "lemma": "werden",
+          "pos": "助动词（被动）",
+          "meaning": "成为"
+        }
+      ],
+      "reference_translation": "新任塞尔维亚议会议长亚历山大·丘皮奇在首都贝尔格莱德公布了选举日期。丘皮奇是在十月底议会选举中，反对派学生党派获胜后当选该职位的。",
+      "grammar_notes": {
+        "skeleton": "Der Parlamentspräsident (主语) gab (变位动词) den Wahltermin (宾语) bekannt (可分前缀).",
+        "structure": [
+          {
+            "text": "Den Wahltermin gab der neue serbische Parlamentspräsident Aleksandar Čupić in der Hauptstadt Belgrad bekannt.",
+            "type": "主句",
+            "explanation": "陈述句，动词 gab 位于第二位，可分前缀 bekannt 置于句末。"
+          },
+          {
+            "text": "Čupić war nach dem Sieg der oppositionellen Studentenliste bei der Parlamentswahl Ende Oktober in das Amt gewählt worden.",
+            "type": "主句（被动语态）",
+            "explanation": "过去完成被动语态（war...gewählt worden），描述过去发生的动作结果。"
+          }
+        ],
+        "points": [
+          {
+            "title": "可分动词 bekannt geben",
+            "explanation": "动词 geben 与前缀 bekannt 构成可分动词，在主句中前缀置于句末。"
+          },
+          {
+            "title": "被动语态（Passiv）",
+            "explanation": "使用 werden 的过去式 war + 过去分词 + worden 构成过去被动语态，强调动作的承受者。"
+          },
+          {
+            "title": "介词支配",
+            "explanation": "nach, bei, in 等介词后均需使用第三格（Dativ），例如 nach dem Sieg, bei der Wahl。"
+          }
+        ]
+      },
+      "analysis": {
+        "engine": "gemini-3.1-flash-lite",
+        "generated_at": "2026-11-28T00:10:17+08:00"
+      }
+    },
     {
       "id": "2026-11-26",
       "date": "2026-11-26",
